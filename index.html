@@ -189,24 +189,18 @@
       <div id="resume-paper">
 
         <!-- Resume Header -->
-        <header class="resume-header">
+        <header class="resume-header" id="prev-header">
           <h2 id="prev-name" class="resume-name"></h2>
           <p id="prev-tagline" class="resume-tagline"></p>
-          <div class="resume-contact">
-            <span id="prev-email"></span>
-            <span class="sep">·</span>
-            <a id="prev-github" href="#" target="_blank" rel="noopener"></a>
-            <span class="sep">·</span>
-            <a id="prev-linkedin" href="#" target="_blank" rel="noopener"></a>
-          </div>
+          <div class="resume-contact" id="prev-contact"></div>
         </header>
 
-        <hr class="resume-divider">
+        <hr class="resume-divider" id="prev-divider-education">
 
         <!-- Education -->
-        <section class="resume-section">
+        <section class="resume-section" id="prev-section-education">
           <h3 class="resume-section-title">Education</h3>
-          <div class="resume-entry">
+          <div class="resume-entry" id="prev-entry-degree">
             <div class="resume-entry-row">
               <strong id="prev-degree"></strong>
               <span id="prev-graduation" class="resume-date"></span>
@@ -215,7 +209,7 @@
           </div>
 
           <!-- 12th Class -->
-          <div class="resume-entry resume-entry-sub">
+          <div class="resume-entry resume-entry-sub" id="prev-entry-12th">
             <div class="resume-entry-row">
               <strong>Class 12th</strong>
               <span id="prev-marks12" class="resume-date"></span>
@@ -225,7 +219,7 @@
           </div>
 
           <!-- 10th Class -->
-          <div class="resume-entry resume-entry-sub">
+          <div class="resume-entry resume-entry-sub" id="prev-entry-10th">
             <div class="resume-entry-row">
               <strong>Class 10th</strong>
               <span id="prev-marks10" class="resume-date"></span>
@@ -235,35 +229,42 @@
           </div>
         </section>
 
-        <hr class="resume-divider">
+        <hr class="resume-divider" id="prev-divider-skills">
 
         <!-- Skills -->
-        <section class="resume-section">
+        <section class="resume-section" id="prev-section-skills">
           <h3 class="resume-section-title">Technical Skills</h3>
           <div id="prev-skills" class="resume-skills">
             <!-- Pills rendered by JS -->
           </div>
         </section>
 
-        <hr class="resume-divider">
+        <hr class="resume-divider" id="prev-divider-projects">
 
         <!-- Projects -->
-        <section class="resume-section">
+        <section class="resume-section" id="prev-section-projects">
           <h3 class="resume-section-title">Projects</h3>
           <div id="prev-projects">
             <!-- Rendered by JS -->
           </div>
         </section>
 
-        <hr class="resume-divider">
+        <hr class="resume-divider" id="prev-divider-hobbies">
 
         <!-- Hobbies -->
-        <section class="resume-section">
+        <section class="resume-section" id="prev-section-hobbies">
           <h3 class="resume-section-title">Hobbies</h3>
           <div id="prev-hobbies" class="resume-skills">
             <!-- Pills rendered by JS -->
           </div>
         </section>
+
+        <!-- Empty state placeholder (hidden in print and when details exist) -->
+        <div id="resume-empty-hint" class="resume-empty-hint">
+          <div class="empty-hint-icon">◈</div>
+          <p class="empty-hint-title">Your live resume preview</p>
+          <p class="empty-hint-desc">Fill out your details on the left to see your resume generate instantly.</p>
+        </div>
 
       </div>
     </section>
